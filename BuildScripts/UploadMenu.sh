@@ -3,12 +3,6 @@
 # Copyright (C) 2016 BeansTown106 for PureNexus Project
 # Copyright (C) 2019-Present A-Team Digital Solutions
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
 
 clear
 
@@ -29,7 +23,7 @@ reset=`tput sgr0`
 #functions
 upload1() {
   # 9 Roms With Gapps
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-9/Gapps /Roms_Android-9/Gapps; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-9/Gapps /Roms_Android-9/Gapps; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -37,7 +31,7 @@ upload1() {
 
 upload2() {
   # 10 Roms With Gapps
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-10/Gapps /Roms_Android-10/Gapps; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-10/Gapps /Roms_Android-10/Gapps; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -45,7 +39,7 @@ upload2() {
 
 upload3() {
   # 11 Roms With Gapps
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-11/Gapps /Roms_Android-11/Gapps; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-11/Gapps /Roms_Android-11/Gapps; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -53,7 +47,7 @@ upload3() {
 
 upload4() {
   # 9 Roms
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-9/No_Gapps /Roms_Android-9/No_Gapps; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-9/No_Gapps /Roms_Android-9/No_Gapps; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -61,7 +55,7 @@ upload4() {
 
 upload5() {
   # 10 Roms
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-10/No_Gapps /Roms_Android-10/No_Gapps; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-10/No_Gapps /Roms_Android-10/No_Gapps; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -69,7 +63,7 @@ upload5() {
 
 upload6() {
   # 11 Roms
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-11/No_Gapps /Roms_Android-11/No_Gapps; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-11/No_Gapps /Roms_Android-11/No_Gapps; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -77,7 +71,7 @@ upload6() {
 
 upload7() {
   # Recoveries
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Recoveries /Recoveries; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Recoveries /Recoveries; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -85,7 +79,7 @@ upload7() {
 
 upload8() {
   # ToolKits
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/ToolKits /ToolKits; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/ToolKits /ToolKits; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
@@ -93,7 +87,7 @@ upload8() {
 
 upload9() {
   # BootLogos
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/BootLogos /BootLogos; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/BootLogos /BootLogos; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
   echo ""
   echo "ENTER TO CONTINUE"
   read
