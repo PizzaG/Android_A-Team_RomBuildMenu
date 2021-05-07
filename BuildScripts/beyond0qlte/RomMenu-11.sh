@@ -3,12 +3,6 @@
 # Copyright (C) 2016 BeansTown106 for PureNexus Project
 # Copyright (C) 2019-Present A-Team Digital Solutions
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
 
 clear
 
@@ -95,7 +89,7 @@ rom4() {
 
 upload() {
   # Upload To Android File Host
-  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-11 /Roms_Android-11; bye" ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21
+  proxychains lftp -e "mirror -R /media/pizzag/Android/Uploads/Roms_Android-11 /Roms_Android-11; bye" ftp://YourUserName:YourPassword@uploads.androidfilehost.com:21
 }
 
 # ----------------------------------------------------------
