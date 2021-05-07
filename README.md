@@ -9,6 +9,8 @@ Android File Host Upload Menu
 Python Version Selector
 Java Version Selector
 Gapps & No Gapps Selector When Building
+Final Rom zip Additions such as Magisk, BusyBox 
+Custom Post Boot Magisk Scripts That allows to add/change device settings on First boot according to your preferences
 
 ```
 
