@@ -4,10 +4,11 @@
 ```
 Add Multiple Roms
 Add Multiple Recoveries
-Add Multiple Device 
+Add Multiple Devices 
 Android File Host Upload Menu
 Python Version Selector
 Java Version Selector
+Gapps & No Gapps Selector When Building
 
 ```
 
