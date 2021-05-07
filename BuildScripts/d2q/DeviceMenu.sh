@@ -3,18 +3,13 @@
 # Copyright (C) 2016 BeansTown106 for PureNexus Project
 # Copyright (C) 2019-Present A-Team Digital Solutions
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
 
 clear
 
 # Variables
 SOURCE=/media/pizzag/Android/BuildScripts/d2q
 SOURCE2=/home/pizzag/Desktop
+SOURCE3=/media/pizzag/Android/BuildScripts
 
 # Colors
 green=`tput setaf 2`
@@ -35,7 +30,7 @@ android11() {
   read selector
   if [[ $selector == 1 ]]
   then
-  cd ${SOURCE2}
+  cd ${SOURCE3}
   echo ""
   echo "Running Java & Python Selector..."
   . ChangeJavaVersion.sh
@@ -66,7 +61,7 @@ recovery() {
   read selector
   if [[ $selector == 1 ]]
   then
-  cd ${SOURCE2}
+  cd ${SOURCE3}
   echo ""
   echo "Running Java & Python Selector..."
   . ChangeJavaVersion.sh
