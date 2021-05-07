@@ -19,11 +19,17 @@ Custom Post Boot Magisk Scripts That allows to add/change device settings on Fir
 ```
 This set of scripts aims to simplify and manage the building of multiple roms, recoveries & devices.  It also has options to build roms with or without gapps and it will move them to the correct upload folders for you.  I have also included a custom A-Team vendor Package that contains a slimmed down version of Android 11 Gapps.
 
-The layout of the scripts is as such.  Main Menu, usually located on Desktop.  it can call your seperate device Menu's and has a Super Build Option that will build all roms for all devices, gapps & no gapps, and then uploads them to the Android File Host ftp Dev account of your choice.  BuildScripts folder can go wherever you want but you will have to modify locations to match your folder structure.  Scripts in the ROMScripts folder are meant to be placed in your rom folders and they are called by the menus to build your device rom.  To add to more roms, simply copey & paste, then adapt them to your new rom.  
+The layout of the scripts is as such.  Main Menu, usually located on Desktop.  it can call your seperate device Menu's and has a Super Build Option that will build all roms for all devices, gapps & no gapps, and then uploads them to the Android File Host ftp Dev account of your choice.  BuildScripts folder can go wherever you want but you will have to modify locations to match your folder structure.  
 
-There are several switche that you will need to add to the device tree of your devices.  You can put these lines in your device.mk file in your device tree or if your device uses a multi-device common tree, you can put them in your common.mk file.
+Scripts in the RomBuildScripts folder are meant to be placed in the root of your rom folders and they are called by the menus to build your device rom.  To add more roms, simply copey & paste, then adapt them to your new rom.  
+
+Scripts in the RecoveryBuildScripts folder are meant to be placed in the root of your recovery folders and they are called by the menus to build your device recovery.  To add more recoveries, simply copey & paste, then adapt them to your new recovery.  
+
+There are 2 switche that you will need to add to the device tree of your devices.  You can put these lines in your device.mk file in your device tree or if your device uses a multi-device common tree, you can put them in your common.mk file.
 ```
 ```
+Switches to Add
+
 A-TEAM_PATH := vendor/A-Team
 
 ####################
