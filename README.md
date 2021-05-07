@@ -10,14 +10,16 @@ Python Version Selector
 Java Version Selector
 Gapps & No Gapps Selector When Building
 Final Rom zip Additions such as Magisk, BusyBox 
-Custom Post Boot Magisk Scripts That allows to add/change device settings on First boot according to your preferences
+Custom Post Boot Magisk Scripts to add/change device user settings on First boot
 
 ```
 
 
 # Info
 ```
-This set of scripts aims to simplify and manage the building of multiple roms, recoveries & devices.  It also has options to build roms with or without gapps and it will move them to the correct upload folders for you.  I have also included a custom A-Team vendor Package that contains a slimmed down version of Android 11 Gapps.
+This set of scripts aims to simplify and manage the building of multiple roms, recoveries & devices.  It also has options to build roms with or without gapps 
+and it will move them to the correct upload folders for you.  I have also included a custom A-Team vendor Package that contains a slimmed down version of Android
+11 Gapps.
 
 The layout of the scripts is as such.  Main Menu, usually located on Desktop.  it can call your seperate device Menu's and has a Super Build Option that will build all roms for all devices, gapps & no gapps, and then uploads them to the Android File Host ftp Dev account of your choice.  BuildScripts folder can go wherever you want but you will have to modify locations to match your folder structure.  
 
