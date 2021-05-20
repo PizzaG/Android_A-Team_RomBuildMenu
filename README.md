@@ -53,7 +53,6 @@ A-TEAM_PATH := vendor/A-Team
 
 # A-Team Prebuilts                                               
 $(call inherit-product, $(A-TEAM_PATH)/Prebuilt_Apps/A-Team.mk)  
-
                                                                  
 # BootAnimation Resolution                                       
 TARGET_BOOT_ANIMATION_RES := 1080 
