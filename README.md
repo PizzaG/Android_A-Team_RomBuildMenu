@@ -41,18 +41,13 @@ Changelog.txt goes into the root of each Rom folder and can be changed to match 
 ```
 
 # Prereq 1
-```
 Add the below code to your device.mk or common.mk file in your device tree
-
-
+```
 ####################
 ## A-Team Add-Ons ##
 ##################################################################
-#
-A-TEAM_PATH := vendor/A-Team 
-
 # A-Team Prebuilts                                               
-$(call inherit-product, $(A-TEAM_PATH)/Prebuilt_Apps/A-Team.mk)  
+$(call inherit-product, vendor/A-Team/Prebuilt_Apps/A-Team.mk)   
                                                                  
 # BootAnimation Resolution                                       
 TARGET_BOOT_ANIMATION_RES := 1080 
