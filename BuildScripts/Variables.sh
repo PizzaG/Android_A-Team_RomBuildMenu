@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Copyright (C) 2019-Present A-Team Digital Solutions
+#
 # A-Team Variables File- "1 Variables File To Rule Them All"
-
+#
 
 # DYNAMIC Variables- Change To Match YOU
 ######################################################
@@ -21,9 +22,6 @@ PATH_TO_RECOVERIES="/media/pizzag/Android/Recoveries"
 RECOVERY_UPLOADS_DIRECTORY="$UPLOADS_DIRECTORY/Recoveries"                           
 # Android File Host FTP Login Info- Free if you ask for Dev FTP Access
 AFH_LOGIN="ftp://YourUserName:YourPassWord@uploads.androidfilehost.com:21"   # Should only need to change Username & Pass
-
-export ROM_26
-
 #
 # Recovery List- According to folder Name*
 RECOVERY_1="Batik       "  #  Keep This Spacing
@@ -34,12 +32,13 @@ RECOVERY_5="PitchBlack  "  #  Keep This Spacing
 RECOVERY_6="RedWolf     "  #  Keep This Spacing
 RECOVERY_7="SkyHawk     "  #  Keep This Spacing
 RECOVERY_8="TWRP        "  #  Keep This Spacing
-# Device List- By Name Or Codename- Add Devices HERE
-DEVICE_1="beyond0qlte"  #  Keep This Spacing
+#
+# Device List- By Name Or Codename- Add Devices HERE * Keep Quotes Hugged*
+DEVICE_1="beyond0qlte"  
 DEVICE_2="beyond1qlte"
-DEVICE_3="beyond2qlte"  #  Keep This Spacing
+DEVICE_3="beyond2qlte"  
 DEVICE_4="d1q"
-DEVICE_5="d2q"  #  Keep This Spacing
+DEVICE_5="d2q"  
 DEVICE_6="olives"
 DEVICE_7=""
 DEVICE_8=""
@@ -51,7 +50,7 @@ DEVICE_13=""
 DEVICE_14=""
 DEVICE_15=""
 DEVICE_16=""
-DEVICE_17=""  #  Keep This Spacing
+DEVICE_17=""  
 DEVICE_18=""
 DEVICE_19=""
 DEVICE_20=""
