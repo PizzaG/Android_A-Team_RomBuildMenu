@@ -20,7 +20,7 @@ PATH_TO_RECOVERIES="/media/pizzag/Android/Recoveries"
 # Recoveries Upload Directory- Only change Recoveries entry if needed 
 RECOVERY_UPLOADS_DIRECTORY="$UPLOADS_DIRECTORY/Recoveries"                           
 # Android File Host FTP Login Info- Free if you ask for Dev FTP Access
-AFH_LOGIN="ftp://PizzaG:NhymsgQoCrcl@uploads.androidfilehost.com:21"   # Should only need to change Username & Pass
+AFH_LOGIN="ftp://YourUserName:YourPassWord@uploads.androidfilehost.com:21"   # Should only need to change Username & Pass
 
 export ROM_26
 
