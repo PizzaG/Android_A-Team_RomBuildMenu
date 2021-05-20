@@ -1,0 +1,8 @@
+# A-Team Custom ChangeLog 
+
+5-5-2021: Remove stock dialer, add nova launcher, xplore file manager, google dialer, pdanet
+
+5-20-2021: Remove Exact Calculator
+
+
+
