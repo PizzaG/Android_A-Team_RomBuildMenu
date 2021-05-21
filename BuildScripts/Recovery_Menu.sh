@@ -3,6 +3,7 @@
 # Copyright (C) 2019-Present A-Team Digital Solutions
 #
 # Generic Device Recovery Build Menu
+#
 clear
 
 # Colors
@@ -22,7 +23,10 @@ until [ "$menu" = "0" ]; do
 echo ""
 echo "${red}=========================================================${reset}"
 echo "${red}==${reset}${green}                Recovery Menu                        ${reset}${red}==${reset}"
-echo "${red}==${reset}${green}    Device Currently Selected: $DEVICE_CODENAME      ${reset}${red}==${reset}"
+echo "${red}==${reset}${green}                                                     ${reset}${red}==${reset}"
+echo "${red}==${reset}${green}    Device Selected:                                 ${reset}${red}==${reset}"
+echo "${red}==${reset}${green}    $DEVICE_CODENAME                                 ${reset}${red}==${reset}"
+echo "${red}==${reset}${green}                                                     ${reset}${red}==${reset}"
 echo "${red}=========================================================${reset}"
 echo "${red}==${reset}${yellow}  01 - Build All Recoveries & Upload                 ${reset}${red}==${reset}"
 echo "${red}==${reset}${yellow}                                                     ${reset}${red}==${reset}"
@@ -36,8 +40,8 @@ echo "${red}==${reset}${yellow}   6 - $RECOVERY_6                               
 echo "${red}==${reset}${yellow}   7 - $RECOVERY_7                                   ${reset}${red}==${reset}"
 echo "${red}==${reset}${yellow}   8 - $RECOVERY_8                                   ${reset}${red}==${reset}"
 echo "${red}==${reset}${yellow}                                                     ${reset}${red}==${reset}"
-echo "${red}==${reset}${red}   0 - Return to $DEVICE_CODENAME Build Menu         ${reset}${red}==${reset}"
-echo "${red}==${reset}${red}  00 - Return to Main Menu                           ${reset}${red}==${reset}"
+echo "${red}==${reset}${red}   0${reset} - Build Menu                                    ${reset}${red}==${reset}"
+echo "${red}==${reset}${red}  00${reset} - Main Menu                                     ${reset}${red}==${reset}"
 echo "${red}=========================================================${reset}"
 echo ""
 echo -n "Enter selection: "
