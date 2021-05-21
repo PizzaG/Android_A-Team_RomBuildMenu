@@ -5,6 +5,7 @@
 # A-Team Variables File- "1 Variables File To Rule Them All"
 #
 
+
 # DYNAMIC Variables- Change To Match YOU
 ######################################################
 #
@@ -65,7 +66,7 @@ DEVICE_25=""
 ## Adapt to your rom folder name, must match exactly
 ROM_1="AICP     "   
 ROM_2="AospK    "  #  Keep This Spacing
-ROM_3="TEST     "
+ROM_3="         "
 ROM_4="         "  #  Keep This Spacing
 ROM_5="         "
 ROM_6="         "
@@ -74,7 +75,7 @@ ROM_8="         "
 ROM_9="         "
 ROM_10="          "
 ROM_11="          "
-ROM_12="TEST      "
+ROM_12="          "
 ROM_13="          "  #  Keep This Spacing
 ROM_14="          "
 ROM_15="          "
@@ -100,7 +101,7 @@ ROM_34="          "
 ROM_35="          "
 ROM_36="          "  #  Keep This Spacing
 ROM_37="          "
-ROM_38="TEST      "
+ROM_38="          "
 ROM_39="          "
 ROM_40="          "
 ROM_41="          "
@@ -119,9 +120,9 @@ ROM_50="          "
 #  *Keep Quotes Hugging Rom Name*
 #
 R1="AICP"   
-R2="AospEx"  
-R3="AospK"
-R4="PixelEx"  
+R2="AospK"  
+R3=""
+R4=""  
 R5=""
 R6=""
 R7=""
@@ -178,7 +179,7 @@ R50=""
 # Script Names
 AUTO_BUILD_ROMS=". Auto_Build_Roms.sh"
 AUTO_BUILD_RECOVERIES=". Auto_Build_Recoveries.sh"
-ROM_BUILD_SCRIPT=". Build_A-Team.sh"
+ROM_BUILD_SCRIPT=". Build_A-Team_Roms.sh"
 RECOVERY_BUILD_SCRIPT=". Build_A-Team_Recoveries.sh"
 MAIN_MENU=". A-Team_Rom_Builder.sh"
 DEVICE_MENU=". Device_Menu.sh"
