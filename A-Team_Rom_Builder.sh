@@ -143,29 +143,35 @@ case ${menu} in
   ## Beyond0qlte
   echo "Device 1- No_Gapps"
   sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_1
+  export DEVICE_CODENAME="$DEVICE_1"
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Beyond1qlte
-  cd $SCRIPTS_DIRECTORY/$DEVICE_2
+  export DEVICE_CODENAME="$DEVICE_2"
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Beyond2qlte
   echo "Device 3- No_Gapps"
   sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_3
+  export DEVICE_CODENAME="$DEVICE_3"
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## D1Q
-  cd $SCRIPTS_DIRECTORY/$DEVICE_4
+  export DEVICE_CODENAME="$DEVICE_4"
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## D2Q
   echo "Device 5- No_Gapps"
   sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_5
+  export DEVICE_CODENAME="$DEVICE_5"
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Olivewood
-  echo "Device 6- No_Gapps"
-  sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_6
-  $AUTO_BUILD_ROMS
+  #echo "Device 6- No_Gapps"
+  #sleep 5
+  #export DEVICE_CODENAME="$DEVICE_6"
+  #cd $SCRIPTS_DIRECTORY
+  #$AUTO_BUILD_ROMS
   clear
   echo ""
   echo " Gapps Builds Finished, Starting No_Gapps Builds"
@@ -176,35 +182,41 @@ case ${menu} in
   ## Beyond0qlte
   echo "Device 1- Gapps"
   sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_1
+  export DEVICE_CODENAME="$DEVICE_1"
   export HAS_GAPPS=true
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Beyond1qlte
-  cd $SCRIPTS_DIRECTORY/$DEVICE_2
+  export DEVICE_CODENAME="$DEVICE_2"
   export HAS_GAPPS=true
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Beyond1q2te
   echo "Device 3- Gapps"
   sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_3
+  export DEVICE_CODENAME="$DEVICE_3"
   export HAS_GAPPS=true
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## D1Q
-  cd $SCRIPTS_DIRECTORY/$DEVICE_4
+  export DEVICE_CODENAME="$DEVICE_4"
   export HAS_GAPPS=true
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## D2Q
   echo "Device 5- Gapps"
   sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_5
+  export DEVICE_CODENAME="$DEVICE_5"
   export HAS_GAPPS=true
+  cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Olivewood
-  echo "Device - Gapps"
-  sleep 5
-  cd $SCRIPTS_DIRECTORY/$DEVICE_6
-  export HAS_GAPPS=true
-  $AUTO_BUILD_ROMS
+  #echo "Device - Gapps"
+  #sleep 5
+  #export DEVICE_CODENAME="$DEVICE_6"
+  #export HAS_GAPPS=true
+  #cd $SCRIPTS_DIRECTORY
+  #$AUTO_BUILD_ROMS
   clear
   proxychains lftp -e "mirror -R $UPLOADS_DIRECTORY/Roms_Android-11 /Roms_Android-11; bye" $AFH_LOGIN
   echo ""
