@@ -1,0 +1,64 @@
+ui_print("  ___         _____                       ");
+ui_print(" / _ \       |_   _|                      ");
+ui_print("/ /_\ \ ______ | |  ___   __ _  _ __ ___  ");
+ui_print("|  _  ||______|| | / _ \ / _` || '_ ` _ \ ");
+ui_print("| | | |        | ||  __/| (_| || | | | | |");
+ui_print("\_| |_/        \_/ \___| \__,_||_| |_| |_|");
+ui_print("            Digital Solutions             ");
+ui_print(" ");
+ui_print(" ");
+ui_print("             PROUDLY PRESENTS             ");
+ui_print(" ");
+ui_print(" ");
+ui_print("            AospK Rom Installer    ");
+ui_print("             Built By: PizzaG     ");
+ui_print("            AospK Version: 16.1    ");
+ui_print("            Android version: 11   ");
+ui_print(" ");
+ui_print(" ");
+ui_print("Initializing A-Team Custom AospK Installer...");
+ui_print(" ");
+sleep (10);
+ui_print(" ");
+package_extract_dir("install", "/tmp/install");
+set_metadata_recursive("/tmp/install", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0644);
+set_metadata_recursive("/tmp/install/bin", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+run_program("/tmp/install/bin/AddOns.sh");
+run_program("/tmp/install/bin/backuptool.sh", "backup", "/dev/block/bootdevice/by-name/system", "ext4");
+# INSTALL SYSTEM
+ui_print("Installing Custom AospK SYSTEM Image...");
+ui_print(" ");
+show_progress(0.900000, 0);
+block_image_update(add_slot_suffix("/dev/block/bootdevice/by-name/system"), package_extract_file("system.transfer.list"), "system.new.dat.br", "system.patch.dat") ||
+  abort("E1001: Failed to update system image.");
+show_progress(0.020000, 10);
+run_program("/tmp/install/bin/backuptool.sh", "restore", "/dev/block/bootdevice/by-name/system", "ext4");
+# KERNEL
+ui_print("Installing Custom BOOT Image...");
+ui_print(" ");
+package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
+show_progress(0.100000, 10);
+ui_print("Installing Custom DTBO Image...");
+ui_print(" ");
+package_extract_file("dtbo.img", "/dev/block/bootdevice/by-name/dtbo");
+ui_print("Installing Custom VBMETA Image...");
+ui_print(" ");
+package_extract_file("vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta");
+set_progress(1.000000);
+# POST BOOT SETTINGS ADDON
+## PART 1 of 2- Move Files To Device
+ui_print("Moving Moving Add-On Files To Device");
+ui_print(" ");
+package_extract_dir("AddOns/post-fs-data.d", "/data/adb/post-fs-data.d");
+## PART 2 of 2- Set Permissions for App Installer
+set_metadata_recursive("/data/adb/post-fs-data.d", "uid", 0, "gid", 0, "dmode", 0755, "fmode", 0755);
+ui_print(" ");
+ui_print("A-Team Custom AospK Installer Complete, PLEASE ENJOY!!");
+ui_print(" ");
+show_progress(0.020000, 10);
+ui_print(" ");
+# ROOT & BUSYBOX
+ui_print("Device Will Reboot & Install Magisk + Busybox"); 
+ui_print(" ");
+sleep (15);
+run_program("/tmp/install/bin/Reboot.sh");

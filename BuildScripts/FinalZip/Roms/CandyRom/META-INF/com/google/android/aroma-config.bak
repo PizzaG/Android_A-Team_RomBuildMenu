@@ -1,0 +1,74 @@
+##############################################
+# UI/Font/Splash
+##############################################
+ini_set("force_colorspace", "rgba");
+splash(
+    6000,
+    "A-Team Digital Solutions"
+);
+fontresload("0", "ttf/Roboto-Regular.ttf", "12");
+fontresload("1", "ttf/Roboto-Regular.ttf", "14");
+
+
+theme("miui4");
+
+##############################################
+
+##
+#
+#                   AROMA Installer - based on the Mod-installer by KamikaZeeFu
+#                   (c) 2011 by Ahmad Amarullah
+#                   amarullz - xda-developers
+#                   http://www.amarullz.com/
+##  Modified By: PizzaG
+##  (c) 2019-Present A-Team Digital Solutions
+##  Build Date- 1-17-2020 
+##  V1.0
+theme("miui4");
+
+calibrate("0.9263","21","0.9944","1","yes");
+
+viewbox(
+  "<#999>Welcome</#>",
+    "\n\n\n\n\n"+
+    "      <#999>You're About to Flash</#>\n"+
+	"      <#999>  CricketRom~ v1.06 </#>\n\n"+
+    "\n\n\n"+
+    "<#999>Press Next to continue the installation...</#>",
+  "icons/info"
+);
+
+
+textbox(
+  #-- Title
+    "Custom Rom",
+  
+  #-- Subtitle
+    "FEATURES",
+  
+  #-- Icon
+    "@update",
+  
+  #-- Arg 4
+    resread("changelogs.txt")
+);
+
+appendvar("installmsg","\n\nBeginning Installation :");
+
+
+install(
+  "Installing",
+  "<#999>Flashing CricketRom...\nPlease Wait...</#>",
+  "icons/install"
+);
+
+# Set Next Text fo Finish
+ini_set("text_next", "Installation Finished");
+
+viewbox(
+  "Installation Completed",
+  "<#080>Congratulations...</#>\n\n"+
+  "<#999>Your installation is now complete\n\n</#>"+
+  "<#999>Press Finish, reboot and enjoy.\n\nThanks PizzaG & LgPWN'd</#>",
+  "icons/info"
+);

@@ -140,13 +140,20 @@ case ${menu} in
   BEGIN=$(date +%s)
   # Build All Devices: No_Gapps + Upload
   #
+  # Select Android Version
+  cd $SCRIPTS_DIRECTORY
+  $SELECTOR_ANDROID
   ## Beyond0qlte
   echo "Device 1- No_Gapps"
+  echo ""
   sleep 5
   export DEVICE_CODENAME="$DEVICE_1"
   cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Beyond1qlte
+  echo "Device 2- No_Gapps"
+  echo ""
+  sleep 5
   export DEVICE_CODENAME="$DEVICE_2"
   cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
@@ -157,6 +164,9 @@ case ${menu} in
   cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## D1Q
+  echo "Device 4- No_Gapps"
+  echo ""
+  sleep 5
   export DEVICE_CODENAME="$DEVICE_4"
   cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
@@ -181,12 +191,16 @@ case ${menu} in
   #
   ## Beyond0qlte
   echo "Device 1- Gapps"
+  echo ""
   sleep 5
   export DEVICE_CODENAME="$DEVICE_1"
   export HAS_GAPPS=true
   cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## Beyond1qlte
+  echo "Device 2- Gapps"
+  echo ""
+  sleep 5
   export DEVICE_CODENAME="$DEVICE_2"
   export HAS_GAPPS=true
   cd $SCRIPTS_DIRECTORY
@@ -199,6 +213,9 @@ case ${menu} in
   cd $SCRIPTS_DIRECTORY
   $AUTO_BUILD_ROMS
   ## D1Q
+  echo "Device 4- Gapps"
+  echo ""
+  sleep 5
   export DEVICE_CODENAME="$DEVICE_4"
   export HAS_GAPPS=true
   cd $SCRIPTS_DIRECTORY

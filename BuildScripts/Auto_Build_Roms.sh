@@ -8,15 +8,15 @@
 # AutoBuild
 #############################
 ## Rom 1
-ROM_NAME=$R1
-cd $PATH_TO_ROMS/$ROM_NAME/$ANDROID_VERSION
-$ROM_BUILD_SCRIPT
-clear
+#ROM_NAME=$R1
+#cd $PATH_TO_ROMS/$ROM_NAME/$ANDROID_VERSION
+#$ROM_BUILD_SCRIPT
+#clear
 #############################
 ## Rom 2
-ROM_NAME=$R2
-cd $PATH_TO_ROMS/$ROM_NAME/$ANDROID_VERSION
-$ROM_BUILD_SCRIPT
+#ROM_NAME=$R2
+#cd $PATH_TO_ROMS/$ROM_NAME/$ANDROID_VERSION
+#$ROM_BUILD_SCRIPT
 #############################
 #
 #############################

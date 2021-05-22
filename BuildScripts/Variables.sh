@@ -19,6 +19,8 @@ UPLOADS_DIRECTORY="/media/pizzag/Android/Uploads"
 PATH_TO_ROMS="/media/pizzag/Android/Roms"  
 # Folder That Holds Your Recovery Sources
 PATH_TO_RECOVERIES="/media/pizzag/Android/Recoveries"
+# A-Team Final Zip Add_Ons Location
+ADD_ONS="$SCRIPTS_DIRECTORY/FinalZip"
 # Recoveries Upload Directory- Only change Recoveries entry if needed 
 RECOVERY_UPLOADS_DIRECTORY="$UPLOADS_DIRECTORY/Recoveries"                           
 # Android File Host FTP Login Info- Free if you ask for Dev FTP Access
