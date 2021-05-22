@@ -102,7 +102,7 @@ case ${menu} in
   # Rom 1
   clear
   BEGIN=$(date +%s)
-  export ROM_NAME=$R1
+  ROM_NAME=$R1
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
   cd $PATH_TO_ROMS/$R1/$ANDROID_VERSION
@@ -119,7 +119,7 @@ case ${menu} in
   # Rom 2
   clear
   BEGIN=$(date +%s)
-  export ROM_NAME=$R2
+  ROM_NAME=$R2
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
   cd $PATH_TO_ROMS/$R2/$ANDROID_VERSION

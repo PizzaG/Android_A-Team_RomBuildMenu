@@ -15,9 +15,9 @@ NO_GAPPS="$PATH_TO_UPLOAD_11/No_Gapps"
 
 # Upload Folder Creation for Gapps & No_Gapps 
 if [ ! -d "$PATH_TO_UPLOAD_11"/Gapps ]; then
-    mkdir -p "$PATH_TO_UPLOAD_11"/Gapps
+    mkdir "$PATH_TO_UPLOAD_11"/Gapps
     if [ ! -d "$PATH_TO_UPLOAD_11"/No_Gapps ]; then
-        mkdir -p "$PATH_TO_UPLOAD_11"/No_Gapps
+        mkdir "$PATH_TO_UPLOAD_11"/No_Gapps
     fi
 else
     echo -e "No Missing Upload Folders"
@@ -58,7 +58,7 @@ echo ""
 # Copy A-Team AddOns To Out Directory
 cp -R $A_TEAM_PATH_2/AddOns /$OUT_DIRECTORY
 cp -R $A_TEAM_PATH_2/install /$OUT_DIRECTORY
-cp -R $A_TEAM_PATH_1/META-INF /$OUT_DIRECTORY
+cp -R $PATH_TO_ROMS/$ROM_NAME/$ANDROID_VERSION/vendor/A-Team/FinalZip/Roms/$ROM_NAME/META-INF /$OUT_DIRECTORY
 # Gapps Finished File Output
 if [[ "$HAS_GAPPS" = true ]]; then 
     # Add A-Team AddOns Into Final Zip

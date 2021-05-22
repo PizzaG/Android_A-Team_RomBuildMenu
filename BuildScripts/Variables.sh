@@ -24,17 +24,17 @@ RECOVERY_UPLOADS_DIRECTORY="$UPLOADS_DIRECTORY/Recoveries"
 # Android File Host FTP Login Info- Free if you ask for Dev FTP Access
 AFH_LOGIN="ftp://YourUserName:YourPassWord@uploads.androidfilehost.com:21"   # Should only need to change Username & Pass
 #
-# Recovery List- According to folder Name*
-RECOVERY_1="Batik       "  #  Keep This Spacing
-RECOVERY_2="Dark        "  #  Keep This Spacing
-RECOVERY_3="Nusantara   "  #  Keep This Spacing
-RECOVERY_4="OrangeFox   "  #  Keep This Spacing
-RECOVERY_5="PitchBlack  "  #  Keep This Spacing
-RECOVERY_6="RedWolf     "  #  Keep This Spacing
-RECOVERY_7="SkyHawk     "  #  Keep This Spacing
-RECOVERY_8="TWRP        "  #  Keep This Spacing
+# Recovery List- According to folder Name *Keep Quotes Hugged*
+RECOVERY_1="Batik"  
+RECOVERY_2="Dark"  
+RECOVERY_3="Nusantara"  
+RECOVERY_4="OrangeFox"  
+RECOVERY_5="PitchBlack"  
+RECOVERY_6="RedWolf"  
+RECOVERY_7="SkyHawk"  
+RECOVERY_8="TWRP"  
 #
-# Device List- By Name Or Codename- Add Devices HERE * Keep Quotes Hugged*
+# Device List- By Name Or Codename- Add Devices HERE *Keep Quotes Hugged*
 DEVICE_1="beyond0qlte"  
 DEVICE_2="beyond1qlte"
 DEVICE_3="beyond2qlte"  
@@ -66,7 +66,7 @@ DEVICE_25=""
 ## Adapt to your rom folder name, must match exactly
 ROM_1="AICP     "   
 ROM_2="AospK    "  #  Keep This Spacing
-ROM_3="         "
+ROM_3="CandyRom "
 ROM_4="         "  #  Keep This Spacing
 ROM_5="         "
 ROM_6="         "
@@ -121,7 +121,7 @@ ROM_50="          "
 #
 R1="AICP"   
 R2="AospK"  
-R3=""
+R3="CandyRom"
 R4=""  
 R5=""
 R6=""
