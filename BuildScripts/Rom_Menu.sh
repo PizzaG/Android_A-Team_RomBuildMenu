@@ -105,7 +105,6 @@ case ${menu} in
   ROM_NAME=$R1
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R1/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -122,7 +121,6 @@ case ${menu} in
   ROM_NAME=$R2
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R2/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -139,11 +137,10 @@ case ${menu} in
   export ROM_NAME=$R3
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R3/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
-  echo "${green}$ROM_3 Built!!${reset}"
+  echo "${green}$R3 Built!!${reset}"
   echo "${green}Total time elapsed: $(echo $((${END}-${BEGIN})) | awk '{print int($1/60)"mins "int($1%60)"secs "}')${reset}"
   clear
 ;;
@@ -156,7 +153,6 @@ case ${menu} in
   export ROM_NAME=$R4
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R4/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -173,7 +169,6 @@ case ${menu} in
   export ROM_NAME=$R5
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R5/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -190,7 +185,6 @@ case ${menu} in
   export ROM_NAME=$R6
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R6/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -207,7 +201,6 @@ case ${menu} in
   export ROM_NAME=$R7
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R7/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -224,7 +217,6 @@ case ${menu} in
   export ROM_NAME=$R8
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R8/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -241,7 +233,6 @@ case ${menu} in
   export ROM_NAME=$R9
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R9/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -258,7 +249,6 @@ case ${menu} in
   export ROM_NAME=$R10
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R10/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -275,7 +265,6 @@ case ${menu} in
   export ROM_NAME=$R11
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R11/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -292,7 +281,6 @@ case ${menu} in
   export ROM_NAME=$R12
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R12/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -309,7 +297,6 @@ case ${menu} in
   export ROM_NAME=$R13
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R13/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -326,7 +313,6 @@ case ${menu} in
   export ROM_NAME=$R14
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R14/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -343,7 +329,6 @@ case ${menu} in
   export ROM_NAME=$R15
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R15/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -360,7 +345,6 @@ case ${menu} in
   export ROM_NAME=$R16
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R16/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -377,7 +361,6 @@ case ${menu} in
   export ROM_NAME=$R17
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R17/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -394,7 +377,6 @@ case ${menu} in
   export ROM_NAME=$R18
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R18/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -411,7 +393,6 @@ case ${menu} in
   export ROM_NAME=$R19
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R19/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -428,7 +409,6 @@ case ${menu} in
   export ROM_NAME=$R20
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R20/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -445,7 +425,6 @@ case ${menu} in
   export ROM_NAME=$R21
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R21/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -462,7 +441,6 @@ case ${menu} in
   export ROM_NAME=$R22
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R22/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -479,7 +457,6 @@ case ${menu} in
   export ROM_NAME=$R23
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R23/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -496,7 +473,6 @@ case ${menu} in
   export ROM_NAME=$R24
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R24/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -513,7 +489,6 @@ case ${menu} in
   export ROM_NAME=$R25
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R25/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -530,7 +505,6 @@ case ${menu} in
   export ROM_NAME=$R26
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R26/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -547,7 +521,6 @@ case ${menu} in
   export ROM_NAME=$R27
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R27/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -564,7 +537,6 @@ case ${menu} in
   export ROM_NAME=$R28
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R28/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -581,7 +553,6 @@ case ${menu} in
   export ROM_NAME=$R29
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R29/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -598,7 +569,6 @@ case ${menu} in
   export ROM_NAME=$R30
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R30/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -615,7 +585,6 @@ case ${menu} in
   export ROM_NAME=$R31
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R31/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -632,7 +601,6 @@ case ${menu} in
   export ROM_NAME=$R32
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R32/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -649,7 +617,6 @@ case ${menu} in
   export ROM_NAME=$R33
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R33/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -666,7 +633,6 @@ case ${menu} in
   export ROM_NAME=$R34
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R34/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -683,7 +649,6 @@ case ${menu} in
   export ROM_NAME=$R35
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R35/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -700,7 +665,6 @@ case ${menu} in
   export ROM_NAME=$R36
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R36/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -717,7 +681,6 @@ case ${menu} in
   export ROM_NAME=$R37
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R37/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -734,7 +697,6 @@ case ${menu} in
   export ROM_NAME=$R38
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R38/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -751,7 +713,6 @@ case ${menu} in
   export ROM_NAME=$R39
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R39/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -768,7 +729,6 @@ case ${menu} in
   export ROM_NAME=$R40
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R40/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -785,7 +745,6 @@ case ${menu} in
   export ROM_NAME=$R41
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R41/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -802,7 +761,6 @@ case ${menu} in
   export ROM_NAME=$R42
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R42/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -819,7 +777,6 @@ case ${menu} in
   export ROM_NAME=$R43
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R43/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -836,7 +793,6 @@ case ${menu} in
   export ROM_NAME=$R44
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R44/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -853,7 +809,6 @@ case ${menu} in
   export ROM_NAME=$R45
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R45/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -870,7 +825,6 @@ case ${menu} in
   export ROM_NAME=$R46
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R46/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -887,7 +841,6 @@ case ${menu} in
   export ROM_NAME=$R47
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R47/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -904,7 +857,6 @@ case ${menu} in
   export ROM_NAME=$R48
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R48/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -921,7 +873,6 @@ case ${menu} in
   export ROM_NAME=$R49
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R49/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)
@@ -938,7 +889,6 @@ case ${menu} in
   export ROM_NAME=$R50
   cd $SCRIPTS_DIRECTORY
   $SELECTOR_GAPPS
-  cd $PATH_TO_ROMS/$R50/$ANDROID_VERSION
   $ROM_BUILD_SCRIPT  
   read
   END=$(date +%s)

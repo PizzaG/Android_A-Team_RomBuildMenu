@@ -19,8 +19,6 @@ UPLOADS_DIRECTORY="/media/pizzag/Android/Uploads"
 PATH_TO_ROMS="/media/pizzag/Android/Roms"  
 # Folder That Holds Your Recovery Sources
 PATH_TO_RECOVERIES="/media/pizzag/Android/Recoveries"
-# A-Team Final Zip Add_Ons Location
-ADD_ONS="$SCRIPTS_DIRECTORY/FinalZip"
 # Recoveries Upload Directory- Only change Recoveries entry if needed 
 RECOVERY_UPLOADS_DIRECTORY="$UPLOADS_DIRECTORY/Recoveries"                           
 # Android File Host FTP Login Info- Free if you ask for Dev FTP Access
@@ -68,13 +66,13 @@ DEVICE_25=""
 ## Adapt to your rom folder name, must match exactly
 ROM_1="AICP     "   
 ROM_2="AospK    "  #  Keep This Spacing
-ROM_3="CandyRom "
-ROM_4="         "  #  Keep This Spacing
-ROM_5="         "
-ROM_6="         "
+ROM_3="Arrow    "
+ROM_4="Awaken   "  #  Keep This Spacing
+ROM_5="Candy    "
+ROM_6="Carbon   "
 ROM_7="         "
 ROM_8="         "
-ROM_9="         "
+ROM_9="         "  #  Keep This Spacing
 ROM_10="          "
 ROM_11="          "
 ROM_12="          "
@@ -91,7 +89,7 @@ ROM_22="          "
 ROM_23="          "
 ROM_24="          "
 ROM_25="          "
-ROM_26="TEST      "
+ROM_26="TEST      "  #  Keep This Spacing
 ROM_27="          "
 ROM_28="          "
 ROM_29="          "
@@ -123,10 +121,10 @@ ROM_50="          "
 #
 R1="AICP"   
 R2="AospK"  
-R3="CandyRom"
-R4=""  
-R5=""
-R6=""
+R3="Arrow"
+R4="Awaken"  
+R5="Candy"
+R6="Carbon"
 R7=""
 R8=""
 R9=""
@@ -190,6 +188,8 @@ ROM_MENU_11=". Rom_Menu.sh"
 UPLOAD_MENU=". Upload_Menu.sh"
 SELECTOR_GAPPS=". Selector_Gapps.sh"
 SELECTOR_ANDROID=". Selector_Android.sh"
+SELECTOR_BUILD_COMMANDS=". Selector_Rom_Build_Commands.sh"
+#SELECTOR_FINAL_ZIP_NAME=". Selector_Final_Zip_Name"
 #
 # Locations
 #

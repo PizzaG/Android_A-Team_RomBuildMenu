@@ -235,7 +235,7 @@ case ${menu} in
   #cd $SCRIPTS_DIRECTORY
   #$AUTO_BUILD_ROMS
   clear
-  proxychains lftp -e "mirror -R $UPLOADS_DIRECTORY/Roms_Android-11 /Roms_Android-11; bye" $AFH_LOGIN
+  #proxychains lftp -e "mirror -R $UPLOADS_DIRECTORY/Roms_Android-11 /Roms_Android-11; bye" $AFH_LOGIN
   echo ""
   echo " Job Complete, PRESS ENTER TO CONTINUE"
   echo ""
