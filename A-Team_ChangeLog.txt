@@ -1,0 +1,8 @@
+v0.14
+Untracked Changes
+
+v0.15: 12-12-2021
+Updated to Support Android 9-12, reworked a bunch of other things
+
+v0.15: 1-8-2022
+removed gapps selector
