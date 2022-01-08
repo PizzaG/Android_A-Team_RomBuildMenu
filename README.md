@@ -1,4 +1,4 @@
-# A-Team Android 9-11 Rom & Recovery Build Menu
+# A-Team Android 9-12 Rom & Recovery Build Menu
 
 # Features
 ```
@@ -11,7 +11,6 @@ Java Version Selector
 Gapps & No Gapps Selector When Building
 Final Rom zip Additions such as Magisk, BusyBox 
 Custom Post Boot Magisk Scripts to add/change device user settings on First boot
-Download A-Team Vendor Add-On From Main Menu
 
 ```
 
