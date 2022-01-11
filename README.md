@@ -10,7 +10,7 @@ Python Version Selector
 Java Version Selector
 Gapps & No Gapps Selector When Building
 Final Rom zip Additions such as Magisk, BusyBox 
-Custom Post Boot Magisk Scripts to add/change device user settings on First boot
+Custom Post Boot Scripts to add/change device user settings on First boot
 
 ```
 
@@ -28,44 +28,30 @@ in BuildScripts folder where you can set the rest.
 
 Scripts in the RomBuildScripts folder are meant to be placed in the root of your rom folders and they are called by the menus to build your device rom.  To add
 more roms, simply copey & paste, then adapt them to your new rom.  
-
-Scripts in the RecoveryBuildScripts folder are meant to be placed in the root of your recovery folders and they are called by the menus to build your device
-recovery.  To add more recoveries, simply copey & paste, then adapt them to your new recovery.  
-
-Build_A-Team_Recoveries.sh goes into the root of each Recovery folder
-
-Build_A-Team.sh goes into the root of each Rom folder
-
-Changelog.txt goes into the root of each Rom folder and can be changed to match your custom rom changes
 ```
 
 # Prereq 1
 Add the below code to your device.mk or common.mk file in your device tree
 ```
-####################
 ## A-Team Add-Ons ##
 ##################################################################
-# A-Team Prebuilts                                               
-$(call inherit-product, vendor/A-Team/Prebuilt_Apps/A-Team.mk)   
+# A-Team                                               
+$(call inherit-product, $(COMMON_PATH)/A-Team.mk)   
                                                                  
 # BootAnimation Resolution                                       
 TARGET_BOOT_ANIMATION_RES := 1080 
 
 # Device Maintainer
-DEVICE_MAINTAINER := PizzaG                               
-                                                                 
-# Gapps Selector                                                 
-ifeq ($(HAS_GAPPS), true)                                        
-  $(call inherit-product, vendor/A-Team/Gapps/gapps.mk)                 
-endif                                                            
+DEVICE_MAINTAINER := Add_Your_Name_Here                              
+                                                                
 ##################################################################
 ```
 
 
 # Prereq 2
 ```
-Download A-Team Vendor Add-On from Main Menu
-Drop A-Team folder into your rom vendor folder
+Download A-Team Device Tree Add-On from Main Menu
+Drop A-Team folder into your device tree folder
 ```
 
 
